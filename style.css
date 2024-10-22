@@ -7,6 +7,9 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 ul{
@@ -16,6 +19,7 @@ ul{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    z-index: 7;
 
 }
 
@@ -30,9 +34,10 @@ video{
 
 .capa {
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 5%;
-    width: 35%;
+    width: 40%;
+    z-index: 3;
 }
 
 .capa-titulo {
@@ -40,12 +45,11 @@ video{
     font-size: 50px;
     margin-bottom: 5px;
     font-weight: bold;
-    z-index: 7;
 }
 
 .capa-descricao {
     color: white;
-    font-size: 20px;
+    font-size: 13px;
     margin-bottom: 20px;
 }
 
@@ -55,7 +59,6 @@ video{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 7;
 }
 
 .link-info {
@@ -63,9 +66,53 @@ video{
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 7;
 }
 
 .img-carro {
-    height: 150px;
+    height: 120px;
+}
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+    padding-bottom: 20px;
+}
+
+.titulo-carro {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-som{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.modal-conteudo{
+    background-color: #181818be;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+    margin-top: 180px;
 }
